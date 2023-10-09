@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className="bg-[#FFF]  py-9 px-14">
       <div className="container">
         <div className="flex justify-between flex-wrap">
-          <div className="flex items-center gap-36">
+          <div className="flex flex-wrap items-center gap-4 md:gap-36">
             <h1 className="text-primary text-[32px] font-bold tracking-[-0.96px]">
               MORENT
             </h1>
@@ -26,16 +26,13 @@ const Navbar = () => {
                     id=""
                     placeholder="Search something here"
                   />
+                  <img  src={Filter} alt="" />
                 </div>
-                <img className="hidden md:block" src={Filter} alt="" />
+                
               </form>
             </div>
 
-            <img
-              className="block md:hidden border-[1px] border-gray py-2 px-3 rounded-full w-full"
-              src={Filter}
-              alt=""
-            />
+           
           </div>
           <div className="flex items-center gap-3">
             <button className="md:block hidden border-[1px] rounded-full border-gray opacity-80">
