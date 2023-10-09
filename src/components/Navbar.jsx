@@ -30,8 +30,9 @@ const Navbar = () => {
                 </div>
                 
               </form>
+              
             </div>
-
+            <img className="md:hidden block" src={Profile} alt="" />
            
           </div>
           <div className="flex items-center gap-3">
@@ -81,7 +82,7 @@ const Navbar = () => {
                 />
               </svg>
             </button>
-            <img src={Profile} alt="" />
+            <img className="hidden md:block" src={Profile} alt="" />
           </div>
         </div>
       </div>
