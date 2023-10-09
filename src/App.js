@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import "./App.css"
+import Navbar from './components/Navbar'
+import AddSection from './components/AddSection'
+import PickandDrop from './components/PickandDrop'
+import ResponsivePickandDrop from './components/common/ResponsivePickandDrop'
+import PopularCar from './components/PopularCar'
+import RecomendedCars from './components/Recomended'
+import Footer from './components/Footer'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <div>
+    <Navbar/>
+    <AddSection/>
+    <div className='hidden md:block'>
+    <PickandDrop/>
     </div>
-  );
+    <div className='block md:hidden'>
+      <ResponsivePickandDrop/>
+    </div>
+    <PopularCar/>
+    <RecomendedCars/>
+    <Footer/>
+   </div>
+  )
 }
 
-export default App;
+export default App
