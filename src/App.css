@@ -56,3 +56,13 @@ a {
   line-height: 150%; /* 24px */
   letter-spacing: -0.32px;
 }
+
+@media screen and (max-width:998px) {
+  .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+}

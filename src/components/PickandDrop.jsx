@@ -5,7 +5,7 @@ const PickandDrop = () => {
   return (
     <div className="bg-[#F6F7F9]">
       <div className="container">
-        <div className="flex  justify-between items-center gap-10 ">
+        <div className="wrapper flex  justify-between items-center gap-10 ">
           <div className="bg-[#FFF] rounded-[10px] p-6 w-full">
             <div>
               <input
